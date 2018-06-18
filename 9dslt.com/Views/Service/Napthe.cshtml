@@ -1,0 +1,84 @@
+﻿@{
+    ViewBag.Title = "Nạp thẻ vào tài khoản";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="dangky-index">
+    <div class="site-map">
+        <div style="margin-top: 0px; font-size: 17px; font-family: initial;">
+            <ul>
+                <li><i class="fa fa-home"></i></li>
+                <li><a href="/" title="Trang chủ">Trang chủ</a></li>
+                <li><i class="fa fa-chevron-circle-right"></i></li>
+                <li><label>Nạp thẻ vào game</label></li>
+            </ul>
+        </div>
+    </div>
+    <div class="tab-hots">
+        <div style="height: 100px; padding: 5px 5px 5px 5px; ">
+            @{
+                if (TempData["errorcard"] != null)
+                {
+                    <div class="alert alert-error">
+                        <h4><i class="fa fa-warning">  Lỗi!</i></h4>
+                        <i style="font-size: 14px;">@TempData["errorcard"]</i>
+                    </div>
+                }
+                if (TempData["successcard"] != null)
+                {
+                    <div class="alert alert-success">
+                        <h4><i class="fa fa-warning">  Thành công!</i></h4>
+                        <i style="font-size: 14px;">@TempData["successcard"]</i>
+                    </div>
+                }
+            }
+        </div>
+        <div class="form-signup" style="padding-left: 65px; padding-bottom: 35px; ">
+            <!--sign up form-->
+            @{
+                if ((bool?)TempData["status"] == true)
+                {
+                    using (Html.BeginForm("Napthe", "Service", FormMethod.Post))
+                    {
+                        <table>
+                            <tr>
+                                <td><label class="title-signup">Chọn loại thẻ <i style="color:red;"> * </i></label></td>
+                                <td>
+                                    <select id="MovieType" name="MovieType">
+                                        <option value="VIETTEL">Viettel</option>
+                                        <option value="GATE">Gate</option>
+                                        <option selected="selected" value="VNP">Vina</option>
+                                        <option value="VMS">Mobi</option>
+                                        <option value="VCOIN">Vcoin</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="title-signup">Số seri <i style="color:red;"> * </i></label></td>
+                                <td>
+                                    @Html.TextBox("seri", "", new { @class = "form-input", @placeholder = "Nhập số seri ..." })
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="title-signup">Mã pin<i style="color:red;"> * </i></label></td>
+                                <td>
+                                    @Html.TextBox("pin", "", new { @class = "form-input", @placeholder = "nằm dưới lớp tráng bạc ..." })
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <button type="submit" style="width:100px;" class="btn btn-default">Nạp thẻ</button>
+                                </td>
+                            </tr>
+                        </table>
+                    }
+                }
+                else
+                {
+                    <label class="title-signup" style="width: auto !important;">Tạm thời server đang hoạt động từ kinh phí được tài trợ nên chức năng nạp thẻ chưa hoạt động.</label>
+                }
+}
+        </div>
+    </div>
+</div>

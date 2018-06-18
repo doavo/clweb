@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Giftcode";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="dangky-index">
+    <div class="site-map">
+        <div style="margin-top: 0px; font-size: 17px; font-family: initial;">
+            <ul>
+                <li><i class="fa fa-home"></i></li>
+                <li><a href="/" title="Trang chủ">Trang chủ</a></li>
+                <li><i class="fa fa-chevron-circle-right"></i></li>
+                <li><label>Nhập Giftcode</label></li>
+            </ul>
+        </div>
+    </div>
+    <div class="tab-hots">
+        <div style="height: 100px; padding: 5px 5px 5px 5px; ">
+            @{
+                if (TempData["errorgift"] != null)
+                {
+                    <div class="alert alert-error">
+                        <h4><i class="fa fa-warning">  Lỗi!</i></h4>
+                        <i style="font-size: 14px;">@TempData["errorgift"]</i>
+                    </div>
+                }
+                if (TempData["successgift"] != null)
+                {
+                    <div class="alert alert-success">
+                        <h4><i class="fa fa-warning">  Thành công!</i></h4>
+                        <i style="font-size: 14px;">@TempData["successgift"]</i>
+                    </div>
+                }
+            }
+        </div>
+        <div class="form-signup" style="padding-left: 65px; padding-bottom: 35px; ">
+            <!--sign up form-->
+            @using (Html.BeginForm("Giftcode", "Account", FormMethod.Post))
+            {
+                <table>
+                    <tr>
+                        <td><label class="title-signup">Mã quà tặng <i style="color:red;"> * </i></label></td>
+                        <td>
+                            @Html.TextBox("giftcode", "", new { @class = "form-input", @placeholder = "Mã quà tặng..." })
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: right;">
+                            <button type="submit" style="width:100px;" class="btn btn-default">Nhận Quà</button>
+                        </td>
+                    </tr>
+                </table>
+            }
+        </div>
+    </div>
+</div>

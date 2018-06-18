@@ -1,0 +1,44 @@
+﻿@model IQueryable<Tempofme.Models.VIEW_RANK_INFO>
+@{
+    int i = 0;
+}
+<div style="height:5px;"></div>
+<div>
+    <table>
+        @{
+            foreach (var item in Model)
+            {
+                i++;
+                <tr>
+                    <td><i>@i</i></td>
+                    <td>@item.chr_name</td>
+					@if (@item.party == 0)
+                    {
+						<td>Lãng nhân</td>}
+                    @if (@item.party == 1)
+                    {
+                        <td>Cái bang</td>}
+                    @if (@item.party == 2)
+                    {
+                        <td>Bí Cung</td>
+                    }
+                    @if (@item.party == 3)
+                    {
+                        <td>Thiếu lâm</td>}
+                    @if (@item.party == 4)
+                    {
+                        <td>Lục lâm</td>}
+                    @if (@item.party == 5)
+                    {
+                        <td>Võ đang</td>}
+                    @if (@item.party == 6)
+                    {
+                        <td>Minh giáo</td>}
+                    <td>@item.inner_level</td>
+                </tr>
+            }
+        }
+
+
+    </table>
+</div>

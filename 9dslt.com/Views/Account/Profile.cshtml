@@ -1,0 +1,75 @@
+﻿@model Tempofme.Models._9d_user
+@{
+    ViewBag.Title = "Thông tin tài khoản của bạn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="dangky-index">
+    <div class="site-map">
+        <div style="margin-top: 0px; font-size: 17px; font-family: initial;">
+            <ul>
+                <li><i class="fa fa-home"></i></li>
+                <li><a href="/" title="Trang chủ">Trang chủ</a></li>
+                <li><i class="fa fa-chevron-circle-right"></i></li>
+                <li><label>Thông tin tài khoản</label></li>
+            </ul>
+        </div>
+    </div>
+    <div class="tab-hots">
+
+        <div style="height: 100px; padding: 5px 5px 5px 5px; ">
+            @{
+                if (TempData["errorchange"] != null)
+                {
+                    <div class="alert alert-error">
+                        <h4><i class="fa fa-warning">  Lỗi!</i></h4>
+                        <i style="font-size: 14px;">@TempData["errorchange"]</i>
+                    </div>
+                }
+                if (TempData["successchange"] != null)
+                {
+                    <div class="alert alert-success">
+                        <h4><i class="fa fa-warning">  Thành công!</i></h4>
+                        <i style="font-size: 14px;">@TempData["successchange"]</i>
+                    </div>
+                }
+            }
+        </div>
+        <div class="form-signup" style="padding-left: 65px; padding-bottom: 35px; ">
+            <!--sign up form-->
+            @using (Html.BeginForm("Profile", "Account", FormMethod.Post))
+            {
+                <table>
+                    <tr>
+                        <td><label class="title-signup">Email của bạn <i style="color:red;"> * </i></label></td>
+                        <td>
+                            @Html.TextBox("email", "", new { @class = "form-input", @Value=@Model.email, @placeholder = "Địa chỉ email..." })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="title-signup" id="testxem">SDT của bạn <i style="color:red;"> * </i></label></td>
+                        <td>
+                            @Html.TextBox("sodienthoai", "", new { @class = "form-input", @Value = @Model.telephone, @placeholder = "SDT của bạn..." })
+                        </td>
+                        <td>
+                            <div id="popup-checksdt">Vui long nhap sdt that cua ban, vi chung toi co the kiem tra bat ki luc nao, se thuc hien khoa tai khoan neu la sdt ao</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="title-signup">Địa chỉ <i style="color:red;"> * </i></label></td>
+                        <td>
+                            @Html.TextBox("address", "", new { @class = "form-input",@Value = @Model.address, @placeholder = "Địa chỉ ..." })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: right;">
+                            <button type="submit" style="width:100px;" class="btn btn-default">Thay đổi</button>
+                        </td>
+                    </tr>
+                </table>
+            }
+        </div>
+
+
+
+    </div>
+</div>

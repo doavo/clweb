@@ -1,0 +1,152 @@
+﻿
+@{
+    var Model = (List<Tempofme.Models._9d_user>)ViewBag.UserList;
+    ViewBag.Title = "Quản lý nhân vật";
+    Layout = "~/Areas/Administrator/Views/Shared/_Layout.cshtml";
+    int i = 0;
+}
+@{
+    if (TempData["erroruser"] != null)
+    {
+        <div class="alert alert-error" style="margin-top: 55px;">
+            <h4><i class="fa fa-warning"> Lỗi!</i></h4>
+            <i style="font-size: 14px;">@TempData["erroruser"]</i>
+        </div>
+    }
+    if (TempData["successuser"] != null)
+    {
+        <div class="alert alert-success" style="margin-top: 55px;">
+            <h4><i class="fa fa-warning"> Thành công!</i></h4>
+            <i style="font-size: 14px;">@TempData["successuser"]</i>
+        </div>
+    }
+}
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2>Tìm kiếm tài khoản</h2>
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+            <br>
+            @using (Html.BeginForm("Usermanager", "Home", FormMethod.Get, new { @class = "form-horizontal form-label-left" }))
+            {
+                <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Loại bài viết</label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <select id="MovieType" style="background: #F0F0E9;
+    font-size: 14px;
+    color: #696763;
+    padding: 6px;
+    width: 60%;
+    border-radius: 0;
+    resize: none;
+    outline: none;
+    border: 1px solid #ccc;" name="type">
+                                <option selected="selected" value="1">Tìm theo tên tài khoản</option>
+                                <option value="2">Tìm theo số điện thoại</option>
+                            </select>
+                        </div>
+                    </div>
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">
+                        Thông tin tìm kiếm <span class="required">*</span>
+                    </label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        @Html.TextBox("userortelephone", "", new { @class = "form-control col-md-7 col-xs-12", @placeholder = "Nhập tên ID or Telephone..." })
+                    </div>
+                </div>
+                <div class="ln_solid"></div>
+                <div class="form-group">
+                    <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
+                        <button class="btn btn-primary">Cancel</button>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2> Danh sách tài khoản </h2>
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+            <div class="table-responsive">
+                <table class="table table-striped jambo_table bulk_action">
+                    <thead>
+                        <tr class="headings">
+                            <th class="column-title">No. </th>
+                            <th class="column-title">Tên tài khoản </th>
+                            <th class="column-title">Số điện thoại </th>
+                            <th class="column-title">Địa chỉ </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            i++;
+                            <tr class="even pointer">
+                                <td class=" "> @i </td>
+                                <td class=" ">@item.user_name</td>
+                                <td class=" ">@item.telephone</td>
+                                <td class=" ">@item.address</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2>Thông tin cảnh báo user</h2>
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+            <br>
+            @using (Html.BeginForm("Usermanager", "Home", FormMethod.Post, new { @class = "form-horizontal form-label-left" }))
+            {
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">
+                        Loại tìm kiếm <span class="required">*</span>
+                    </label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        @Html.TextBox("usertype", "", new { @class = "form-control col-md-7 col-xs-12", @readonly = "readonly", @Value = @ViewBag.Type, @placeholder = "Nhập tên ID or Telephone..." })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">
+                        Thông tin tìm kiếm <span class="required">*</span>
+                    </label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        @Html.TextBox("userid", "", new { @class = "form-control col-md-7 col-xs-12", @readonly = "readonly", @Value = @ViewBag.UserOrTelephone, @placeholder = "Nhập tên ID or Telephone..." })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">
+                        Nội dung cảnh báo <span class="required">*</span>
+                    </label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        @Html.TextArea("warning", "", new { @class = "form-control", @rows = "3" })
+                    </div>
+                </div>
+                <div class="ln_solid"></div>
+                <div class="form-group">
+                    <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
+                        <button class="btn btn-primary">Hủy</button>
+                        <button type="submit" class="btn btn-success">Cảnh báo</button>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

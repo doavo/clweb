@@ -1,0 +1,97 @@
+﻿@{
+    ViewBag.Title = "Ads";
+    Layout = "~/Areas/Administrator/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    if (TempData["errorads"] != null)
+    {
+        <div class="alert alert-error" style="margin-top: 55px;">
+            <h4><i class="fa fa-warning"> Lỗi!</i></h4>
+            <i style="font-size: 14px;">Nhập đầy đủ thông tin đi</i>
+        </div>
+    }
+    if (TempData["successads"] != null)
+    {
+        <div class="alert alert-success" style="margin-top: 55px;">
+            <h4><i class="fa fa-warning"> Thành công!</i></h4>
+            <i style="font-size: 14px;">Cài đặt quảng cáo thành công</i>
+        </div>
+    }
+}
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2>Thiết lập quảng cáo</h2>
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+            <br>
+
+            @using (Html.BeginForm("Ads", "Home", FormMethod.Post, new { @class = "form-horizontal form-label-left" }))
+            {
+                
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Loại quảng cáo</label>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                        <select id="MovieType" style="background: #F0F0E9;
+    font-size: 14px;
+    color: #696763;
+    padding: 6px;
+    width: 100%;
+    border-radius: 0;
+    resize: none;
+    outline: none;
+    border: 1px solid #ccc;" name="MovieType">
+                            <option selected="selected" value="1">Quảng cáo bên trái</option>
+                            <option value="2">Quảng cáo bên phải</option>
+                            <option value="3">Quảng cáo phía dưới</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Tiêu đề của quảng cáo</label>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                        @Html.TextBox("adstitle", "", new { @class = "form-control", @placeholder = "Nhập tên chủ đề..." })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12">
+                        <input type="button" id="ts" value="Lấy ảnh bìa" />
+                        <script>
+                            $("#ts").click(function () {
+                                var finder = new CKFinder();
+                                finder.selectActionFunction = function (fileUrl) {
+                                    //fileUrl = fileUrl.split("~")[1];
+                                    //fileUrl = "/" + fileUrl;
+                                    $("#pic").val(fileUrl);
+                                };
+                                finder.popup();
+                            });
+                        </script>
+                    </label>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                        @Html.TextBox("adsimage", "", new { @class = "form-control", @id = "pic", @placeholder = "Nhập tên chủ đề..." })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12">
+                        Link quảng cáo <span class="required">*</span>
+                    </label>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                        @Html.TextBox("adslink", "", new { @class = "form-control", @placeholder = "Nhập link..." })
+                    </div>
+                </div>
+                <div class="ln_solid"></div>
+                <div class="form-group">
+                    <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
+                        <button class="btn btn-primary">Cancel</button>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

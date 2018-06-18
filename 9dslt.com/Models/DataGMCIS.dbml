@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CIS_DB" Class="DataGMCISDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=103.56.165.180;Initial Catalog=CIS_DB;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="CIS_DBConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.Sp_Purchase_Using" Method="Sp_Purchase_Using">
+    <Parameter Name="user_id" Type="System.String" DbType="VarChar(60)" />
+    <Parameter Name="cart_itemCode" Type="System.Int32" DbType="Int" />
+    <Parameter Name="game_server" Type="System.Byte" DbType="TinyInt" />
+    <Parameter Name="item_price" Type="System.Int32" DbType="Int" />
+    <Parameter Name="order_idx" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="v_error" Type="System.Byte" DbType="TinyInt" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

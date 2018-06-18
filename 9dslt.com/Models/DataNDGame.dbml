@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ND_GAME_0" Class="DataNDGameDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=103.56.165.180;Initial Catalog=ND_GAME_0;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ND_GAME_0ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.VIEW_RANK_INFO" Member="VIEW_RANK_INFOs">
+    <Type Name="VIEW_RANK_INFO">
+      <Column Name="unique_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="chr_name" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="inner_level" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="jin" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="party" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="class" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="honor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="hiding" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

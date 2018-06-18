@@ -1,0 +1,79 @@
+﻿@model Tempofme.Models._9d_percen
+@{
+    ViewBag.Title = "Shopmanager";
+    Layout = "~/Areas/Administrator/Views/Shared/_Layout.cshtml";
+    int i = 0;
+}
+@{
+    if (TempData["errorpercen"] != null)
+    {
+        <div class="alert alert-error" style="margin-top: 55px;">
+            <h4><i class="fa fa-warning"> Lỗi!</i></h4>
+            <i style="font-size: 14px;">@TempData["errorpercen"]</i>
+        </div>
+    }
+    if (TempData["successpercen"] != null)
+    {
+        <div class="alert alert-success" style="margin-top: 55px;">
+            <h4><i class="fa fa-warning"> Thành công!</i></h4>
+            <i style="font-size: 14px;">@TempData["successpercen"]</i>
+        </div>
+    }
+}
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2>Quản lý tỉ lệ nạp xu</h2>
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+            <br>
+            @using (Html.BeginForm("Percenmanager", "Home", FormMethod.Post, new { @class = "form-horizontal form-label-left" }))
+            {
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">
+                        Tỷ lệ nhận xu(%) <span class="required">*</span>
+                    </label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        @Html.TextBox("tyle", "", new { @class = "form-control col-md-7 col-xs-12", @Value = @Model.percen, @placeholder = "Nhập tên ID..." })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Trạng thái nạp thẻ</label>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                        <select id="MovieType" style="background: #F0F0E9;
+    font-size: 14px;
+    color: #696763;
+    padding: 6px;
+    width: 100%;
+    border-radius: 0;
+    resize: none;
+    outline: none;
+    border: 1px solid #ccc;" name="MovieType">
+                            @{
+                if (Model.status == true)
+                {
+                    <option selected="selected" value="1">Mở nạp thẻ</option>
+                                <option value="2">Đóng nạp thẻ</option>
+                }
+                else
+                {
+                    <option value="1">Mở nạp thẻ</option>
+                                <option selected="selected" value="2">Đóng nạp thẻ</option>
+                }
+                            }
+
+                        </select>
+                    </div>
+                </div>
+                <div class="ln_solid"></div>
+                <div class="form-group">
+                    <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
+                        <button class="btn btn-primary">Cancel</button>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

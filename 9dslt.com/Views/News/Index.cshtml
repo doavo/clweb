@@ -1,0 +1,74 @@
+﻿
+@{
+    //@model List<Tempofme.Models._9d_new>
+    //ViewBag.Title = @ViewBag.newsascii + " - Cửu long Galaxy nơi hội tụ của tinh hoa nhân loại.";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="news-index2">
+    <div class="tab-news">
+        <ul>
+            <li><i id="link-hots">Tin tức</i></li>
+            <li><i id="link-support">hỗ trợ</i></li>
+            <li><i id="link-event">khuyến mãi</i></li>
+        </ul>
+    </div>
+    <div id="tab-hots">
+        <div style="height:15px;"></div>
+        <div class="news-content-tab">
+            <div class="wrap-content">
+                <div class="title-news2">
+                    <label>@ViewBag.newstitle</label>
+                    <b class="icon-title-news2"></b>
+                    <span class="title-date-news">Ngày đăng: @ViewBag.newscreateat - By : @ViewBag.newscreateby</span>
+                </div>
+
+                <div class="content-news">
+                    <h2><i style="font-size: 13px;">@ViewBag.newsdescription</i></h2><br>
+                    @Html.Raw(@ViewBag.newscontent)
+                </div>
+
+                <div class="tabs-news news-req">Tin liên quan</div>
+                <ul class="list-news">
+                    <li>
+                        <h5>
+                            <span class="type-event">Sự kiện</span>
+                            <a href="/">  </a>
+                            <span class="date-news">09/03/2017</span>
+                        </h5>
+                    </li>
+                    <li>
+                        <h5>
+                            <span class="type-event">Sự kiện</span>
+                            <a href="/"> </a>
+                            <span class="date-news">09/03/2017</span>
+                        </h5>
+                    </li>
+                    <li>
+                        <h5>
+                            <span class="type-event">Sự kiện</span>
+                            <a href="/">  </a>
+                            <span class="date-news">06/03/2017</span>
+                        </h5>
+                    </li>
+                    <li>
+                        <h5>
+                            <span class="type-event">Sự kiện</span>
+                            <a href="/" target="_blank">  </a>
+                            <span class="date-news">03/03/2017</span>
+                        </h5>
+                    </li>
+                    <li>
+                        <h5>
+                            <span class="type-event">Sự kiện</span>
+                            <a href="/">  </a>
+                            <span class="date-news">03/03/2017</span>
+                        </h5>
+                    </li>
+                </ul>
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+
+</div>

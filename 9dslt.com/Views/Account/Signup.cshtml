@@ -1,0 +1,120 @@
+﻿@{
+    ViewBag.Title = "Đăng ký tài khoản";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<div class="alert alert-error">
+        <h4><i class="fa fa-warning">  Lỗi!</i></h4>
+        <i style="font-size: 14px;">Apparently, Adblock Plus can remove Font Awesome brand icons with their "Remove Social Media Buttons" setting. We will not use hacks to force them to display. Please</i>
+    </div>
+    <div class="alert alert-warning">
+        <h4><i class="fa fa-warning">  Cảnh báo!</i></h4>
+        <i style="font-size: 14px;">Apparently, Adblock Plus can remove Font Awesome brand icons with their "Remove Social Media Buttons" setting. We will not use hacks to force them to display. Please</i>
+    </div>
+    <div class="alert alert-success">
+        <h4><i class="fa fa-warning">  Thành công!</i></h4>
+        <i style="font-size: 14px;">Apparently, Adblock Plus can remove Font Awesome brand icons with their "Remove Social Media Buttons" setting. We will not use hacks to force them to display. Please</i>
+    </div>*@
+
+<div class="dangky-index">
+    <div class="site-map">
+        <div style="margin-top: 0px; font-size: 17px; font-family: initial;">
+            <ul>
+                <li><i class="fa fa-home"></i></li>
+                <li><a href="/" title="Trang chủ">Trang chủ</a></li>
+                <li><i class="fa fa-chevron-circle-right"></i></li>
+                <li><label>Đăng ký tài khoản</label></li>
+            </ul>
+        </div>
+    </div>
+    <div class="tab-hots">
+
+
+
+
+        <div style="height: 100px; padding: 5px 5px 5px 5px; ">
+            @{
+                if (TempData["errorsignup"] != null)
+                {
+                    <div class="alert alert-error">
+                        <h4><i class="fa fa-warning">  Lỗi!</i></h4>
+                        <i style="font-size: 14px;">@TempData["errorsignup"]</i>
+                    </div>
+                }
+            }
+        </div>
+        <div class="form-signup" style="padding-left: 65px; padding-bottom: 35px; ">
+            <!--sign up form-->
+            @using (Html.BeginForm("Signup", "Account", FormMethod.Post))
+            {
+                <table>
+                    <tr>
+                        <td><label class="title-signup">Tên đăng nhập <i style="color:red;"> * </i></label></td>
+                        <td>
+                            @Html.TextBox("name", "", new { @class = "form-input", @placeholder = "Tên tài khoản..." })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="title-signup">Email của bạn <i style="color:red;"> * </i></label></td>
+                        <td>
+                            @Html.TextBox("email", "", new { @class = "form-input", @placeholder = "Địa chỉ email..." })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="title-signup" id="testxem">SDT của bạn <i style="color:red;"> * </i></label></td>
+                        <td>
+                            @Html.TextBox("sodienthoai", "", new { @class = "form-input", @placeholder = "SDT của bạn..." })
+                        </td>
+                        <td>
+                            <div id="popup-checksdt">Vui long nhap sdt that cua ban, vi chung toi co the kiem tra bat ki luc nao, se thuc hien khoa tai khoan neu la sdt ao</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="title-signup">Mật khẩu của bạn <i style="color:red;"> * </i></label></td>
+                        <td>
+                            @Html.Password("password", "", new { @class = "form-input", @placeholder = "Mật khẩu của bạn..." })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="title-signup">Nhắc lại mật khẩu <i style="color:red;"> * </i></label></td>
+                        <td>
+                            @Html.Password("passwordx", "", new { @class = "form-input", @placeholder = "Xác nhận mật khẩu..." })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="title-signup">Giới tính <i style="color:red;"> * </i></label></td>
+                        <td>
+                            @Html.RadioButton("option", "nam", new { id = "rbNam", @checked = true })
+                            <label class="title-radio" for="rbNam">Nam</label>
+                            @Html.RadioButton("option", "nu", new { id = "rbNu" })
+                            <label class="title-radio" for="rbNu">Nữ</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="title-signup">Địa chỉ <i style="color:red;"> * </i></label></td>
+                        <td>
+                            @Html.TextBox("address", "", new { @class = "form-input", @placeholder = "Địa chỉ ..." })
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: right;">
+                            <a href="#" class="foget-password">Hay là bạn đã quên mật khẩu?</a>
+                            <button type="submit" style="width:100px;" class="btn btn-default">Đăng ký</button>
+                        </td>
+                    </tr>
+                </table>
+
+
+
+
+
+            }
+        </div>
+
+
+
+    </div>
+</div>

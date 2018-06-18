@@ -1,0 +1,207 @@
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\Tempofme.dll.config
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\Tempofme.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\Tempofme.pdb
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\Antlr3.Runtime.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\EntityFramework.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\Microsoft.AspNet.SignalR.Core.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\Microsoft.Owin.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\Microsoft.Owin.Security.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\Microsoft.Web.Infrastructure.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\Newtonsoft.Json.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\Owin.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\System.Net.Http.Formatting.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\System.Web.Http.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\System.Web.Http.WebHost.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\System.Web.Mvc.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\System.Web.Optimization.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\System.Web.Providers.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\System.Web.Razor.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\System.Web.WebPages.Deployment.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\System.Web.WebPages.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\System.Web.WebPages.Razor.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\WebGrease.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\Microsoft.AspNet.SignalR.Core.xml
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\Microsoft.Owin.xml
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\Microsoft.Owin.Security.xml
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\Newtonsoft.Json.xml
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\EntityFramework.xml
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\System.Net.Http.Formatting.xml
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\System.Web.Http.xml
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\System.Web.Http.WebHost.xml
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\System.Web.Mvc.xml
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\System.Web.Razor.xml
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\System.Web.WebPages.xml
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\System.Web.WebPages.Deployment.xml
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\System.Web.WebPages.Razor.xml
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\obj\Debug\Tempofme.csprojResolveAssemblyReference.cache
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\obj\Debug\Tempofme.dll
+c:\users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\obj\Debug\Tempofme.pdb
+C:\Users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\CKFinder.dll
+C:\Users\nam\documents\visual studio 2013\Projects\Tempofme\Tempofme\bin\CKFinder.pdb
+C:\inetpub\Tempofme\Tempofme\bin\Tempofme.dll.config
+C:\inetpub\Tempofme\Tempofme\bin\Tempofme.dll
+C:\inetpub\Tempofme\Tempofme\bin\Tempofme.pdb
+C:\inetpub\Tempofme\Tempofme\bin\Antlr3.Runtime.dll
+C:\inetpub\Tempofme\Tempofme\bin\CKFinder.dll
+C:\inetpub\Tempofme\Tempofme\bin\EntityFramework.dll
+C:\inetpub\Tempofme\Tempofme\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\inetpub\Tempofme\Tempofme\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\inetpub\Tempofme\Tempofme\bin\Microsoft.Owin.dll
+C:\inetpub\Tempofme\Tempofme\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\inetpub\Tempofme\Tempofme\bin\Microsoft.Owin.Security.dll
+C:\inetpub\Tempofme\Tempofme\bin\Microsoft.Web.Infrastructure.dll
+C:\inetpub\Tempofme\Tempofme\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\inetpub\Tempofme\Tempofme\bin\Newtonsoft.Json.dll
+C:\inetpub\Tempofme\Tempofme\bin\Owin.dll
+C:\inetpub\Tempofme\Tempofme\bin\System.Net.Http.Formatting.dll
+C:\inetpub\Tempofme\Tempofme\bin\System.Web.Http.dll
+C:\inetpub\Tempofme\Tempofme\bin\System.Web.Http.WebHost.dll
+C:\inetpub\Tempofme\Tempofme\bin\System.Web.Mvc.dll
+C:\inetpub\Tempofme\Tempofme\bin\System.Web.Optimization.dll
+C:\inetpub\Tempofme\Tempofme\bin\System.Web.Providers.dll
+C:\inetpub\Tempofme\Tempofme\bin\System.Web.Razor.dll
+C:\inetpub\Tempofme\Tempofme\bin\System.Web.WebPages.Deployment.dll
+C:\inetpub\Tempofme\Tempofme\bin\System.Web.WebPages.dll
+C:\inetpub\Tempofme\Tempofme\bin\System.Web.WebPages.Razor.dll
+C:\inetpub\Tempofme\Tempofme\bin\WebGrease.dll
+C:\inetpub\Tempofme\Tempofme\bin\CKFinder.pdb
+C:\inetpub\Tempofme\Tempofme\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\inetpub\Tempofme\Tempofme\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\inetpub\Tempofme\Tempofme\bin\Microsoft.Owin.xml
+C:\inetpub\Tempofme\Tempofme\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\inetpub\Tempofme\Tempofme\bin\Microsoft.Owin.Security.xml
+C:\inetpub\Tempofme\Tempofme\bin\Newtonsoft.Json.xml
+C:\inetpub\Tempofme\Tempofme\bin\EntityFramework.xml
+C:\inetpub\Tempofme\Tempofme\bin\System.Net.Http.Formatting.xml
+C:\inetpub\Tempofme\Tempofme\bin\System.Web.Http.xml
+C:\inetpub\Tempofme\Tempofme\bin\System.Web.Http.WebHost.xml
+C:\inetpub\Tempofme\Tempofme\bin\System.Web.Mvc.xml
+C:\inetpub\Tempofme\Tempofme\bin\System.Web.Razor.xml
+C:\inetpub\Tempofme\Tempofme\bin\System.Web.WebPages.xml
+C:\inetpub\Tempofme\Tempofme\bin\System.Web.WebPages.Deployment.xml
+C:\inetpub\Tempofme\Tempofme\bin\System.Web.WebPages.Razor.xml
+C:\inetpub\Tempofme\Tempofme\obj\Debug\Tempofme.csprojResolveAssemblyReference.cache
+C:\inetpub\Tempofme\Tempofme\obj\Debug\Tempofme.dll
+C:\inetpub\Tempofme\Tempofme\obj\Debug\Tempofme.pdb
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\Tempofme.dll.config
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\Tempofme.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\Tempofme.pdb
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\Antlr3.Runtime.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\CKFinder.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\EntityFramework.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\Microsoft.AspNet.SignalR.Core.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\Microsoft.Owin.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\Microsoft.Owin.Security.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\Microsoft.Web.Infrastructure.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\Newtonsoft.Json.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\Owin.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\System.Net.Http.Formatting.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\System.Web.Http.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\System.Web.Http.WebHost.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\System.Web.Mvc.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\System.Web.Optimization.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\System.Web.Providers.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\System.Web.Razor.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\System.Web.WebPages.Deployment.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\System.Web.WebPages.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\System.Web.WebPages.Razor.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\WebGrease.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\CKFinder.pdb
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\Microsoft.AspNet.SignalR.Core.xml
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\Microsoft.Owin.xml
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\Microsoft.Owin.Security.xml
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\Newtonsoft.Json.xml
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\EntityFramework.xml
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\System.Net.Http.Formatting.xml
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\System.Web.Http.xml
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\System.Web.Http.WebHost.xml
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\System.Web.Mvc.xml
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\System.Web.Razor.xml
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\System.Web.WebPages.xml
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\System.Web.WebPages.Deployment.xml
+E:\9d offline\website 9DNew\Tempofme\Tempofme\bin\System.Web.WebPages.Razor.xml
+E:\9d offline\website 9DNew\Tempofme\Tempofme\obj\Debug\Tempofme.csprojResolveAssemblyReference.cache
+E:\9d offline\website 9DNew\Tempofme\Tempofme\obj\Debug\Tempofme.dll
+E:\9d offline\website 9DNew\Tempofme\Tempofme\obj\Debug\Tempofme.pdb
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\Tempofme.dll.config
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\Tempofme.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\Tempofme.pdb
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\Antlr3.Runtime.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\CKFinder.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\EntityFramework.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\Microsoft.Owin.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\Microsoft.Owin.Security.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\Microsoft.Web.Infrastructure.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\Newtonsoft.Json.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\Owin.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\System.Net.Http.Formatting.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\System.Web.Http.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\System.Web.Http.WebHost.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\System.Web.Mvc.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\System.Web.Optimization.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\System.Web.Providers.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\System.Web.Razor.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\System.Web.WebPages.Deployment.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\System.Web.WebPages.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\System.Web.WebPages.Razor.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\WebGrease.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\CKFinder.pdb
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\Microsoft.Owin.xml
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\Microsoft.Owin.Security.xml
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\Newtonsoft.Json.xml
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\EntityFramework.xml
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\System.Net.Http.Formatting.xml
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\System.Web.Http.xml
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\System.Web.Http.WebHost.xml
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\System.Web.Mvc.xml
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\System.Web.Razor.xml
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\System.Web.WebPages.xml
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\System.Web.WebPages.Deployment.xml
+C:\inetpub\wwwroot\Tempofme\Tempofme\bin\System.Web.WebPages.Razor.xml
+C:\inetpub\wwwroot\Tempofme\Tempofme\obj\Debug\Tempofme.dll
+C:\inetpub\wwwroot\Tempofme\Tempofme\obj\Debug\Tempofme.pdb
+C:\inetpub\wwwroot\Tempofme\Tempofme\obj\Debug\Tempofme.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\Tempofme.dll.config
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\Tempofme.dll
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\Tempofme.pdb
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\CKFinder.dll
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\System.Web.Http.dll
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\System.Web.Razor.dll
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\CKFinder.pdb
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\System.Web.Http.xml
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\System.Web.Razor.xml
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\obj\Debug\Tempofme.dll
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\obj\Debug\Tempofme.pdb
+C:\Users\Administrator\Downloads\9dslt.com2\9dslt.com\obj\Debug\Tempofme.csprojResolveAssemblyReference.cache

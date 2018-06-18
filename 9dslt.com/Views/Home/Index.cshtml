@@ -1,0 +1,142 @@
+﻿@model List<Tempofme.Models._9d_new>
+@{
+    ViewBag.Title = "Trang chủ Cửu long";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    int i = 0;
+    int u = 0;
+    int k = 0;
+    if (TempData["Checkaccloginandconfirmcheatfrominternet"] != null)
+    {
+        <div>@TempData["Checkaccloginandconfirmcheatfrominternet"]</div>
+    }
+}
+<div class="banner-index">
+    @*<div class="left-banner">
+        <a href="@ViewBag.indexleftlink" title="@ViewBag.indexleftname" target="_blank">
+            <img src="@ViewBag.indexleftimage" style="width: 140px;height:261px;" />
+        </a>
+    </div>*@
+    <div class="main-banner">
+        <iframe width="710" height="261" src="https://www.youtube.com/embed/X9jANQgnONg?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+    @*<DIV CLASS="RIGHT-BANNER">
+        <A HREF="@VIEWBAG.INDEXRIGHTLINK" TITLE="@VIEWBAG.INDEXRIGHTNAME" TARGET="_BLANK">
+            <IMG SRC="@VIEWBAG.INDEXRIGHTIMAGE" STYLE="WIDTH: 140PX;HEIGHT:261PX;" />
+        </A>
+    </DIV>*@
+</div>
+<div style="height:10px;"></div>
+<div class="news-index">
+    <div class="tab-news">
+        <ul>
+            <li><i id="link-hots">Tin tức</i></li>
+            <li><i id="link-support">Hỗ Trợ</i></li>
+            <li><i id="link-event">Khuyến Mãi</i></li>
+        </ul>
+    </div>
+    <div id="tab-hots">
+        <div style="height:750px;"></div>
+        @*------------------*@
+        @*------------------*@
+        @{
+            foreach (var item in Model)
+            {
+                i++;
+                if (i < 8 && item.type == 1)
+                {
+                    <div class="title-hots">
+                        <div class="title-img">
+                            <img src="@item.news_images" style="width: 109px; height: 119px; " />
+                        </div>
+                        <div class="title-content">
+                            <div class="content-title">
+                                <a href="/Bai-viet/@item.news_ascii">@item.news_title</a>
+                            </div>
+                            <div class="content-datetime">
+                                <label>Ngày đăng: @item.created_at   </label> <label style="margin-left:5px;">by: @item.created_by</label>
+                            </div>
+                            <div class="content-description">
+                                <label><a href="/Bai-viet/@item.news_ascii">@item.news_descriptions</a></label>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        }
+        }
+
+        <div style="height:5px;"></div>
+        @*------------------*@
+        @*------------------*@
+
+    </div>
+    <div id="tab-support">
+        <div style="height:750px;"></div>
+        @*------------------*@
+        @*------------------*@
+        @{
+            foreach (var item in Model)
+            {
+                i++;
+                if (k < 8 && item.type == 2)
+                {
+                    <div class="title-hots">
+                        <div class="title-img">
+                            <img src="@item.news_images" style="width: 109px; height: 119px; " />
+                        </div>
+                        <div class="title-content">
+                            <div class="content-title">
+                                <a href="/Bai-viet/@item.news_ascii">@item.news_title</a>
+                            </div>
+                            <div class="content-datetime">
+                                <label>Ngày đăng: @item.created_at   </label> <label style="margin-left:5px;">by: @item.created_by</label>
+                            </div>
+                            <div class="content-description">
+                                <label><a href="/Bai-viet/@item.news_ascii">@item.news_descriptions</a></label>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        }
+
+        @*------------------*@
+        @*------------------*@
+    </div>
+    <div id="tab-event">
+        <div style="height:750px;"></div>
+        @*------------------*@
+        @*------------------*@
+        @{
+            foreach (var item in Model)
+            {
+                i++;
+                if (u < 8 && item.type == 3)
+                {
+                    <div class="title-hots">
+                        <div class="title-img">
+                            <img src="@item.news_images" style="width: 109px; height: 119px; " />
+                        </div>
+                        <div class="title-content">
+                            <div class="content-title">
+                                <a href="/Bai-viet/@item.news_ascii">@item.news_title</a>
+                            </div>
+                            <div class="content-datetime">
+                                <label>Ngày đăng: @item.created_at   </label> <label style="margin-left:5px;">by: @item.created_by</label>
+                            </div>
+                            <div class="content-description">
+                                <label><a href="/Bai-viet/@item.news_ascii">@item.news_descriptions</a></label>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        }
+
+        @*------------------*@
+        @*------------------*@
+    </div>
+
+</div>

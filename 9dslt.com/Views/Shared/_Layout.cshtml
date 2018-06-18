@@ -1,0 +1,316 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <script src="../Scripts/js/vendor/modernizr.js"></script>
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <link href="../Content/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../Content/css/prettyPhoto.css" rel="stylesheet">
+    <link href="../Content/css/price-range.css" rel="stylesheet">
+    <link href="../Content/css/animate.css" rel="stylesheet">
+    <link href="../Content/css/main.css" rel="stylesheet">
+    <link href="../Content/css/responsive.css" rel="stylesheet">
+
+    <link href="../Content/Site.css" rel="stylesheet">
+
+    <script src="../Scripts/js/jquery.js"></script>
+    <script src="../Scripts/js/price-range.js"></script>
+    <script src="../Scripts/js/jquery.scrollUp.min.js"></script>
+    <script src="../Scripts/js/bootstrap.min.js"></script>
+    <script src="../Scripts/js/jquery.prettyPhoto.js"></script>
+    <script src="../Scripts/js/main.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+
+    <style>
+        body {
+            background: #16151b url(../Content/images/bg.jpg) no-repeat ;
+            /*height : 100%;
+            width : 100%;*/
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        #hinh-nen {
+            /*background: #e6e6e6 url(../Content/images/bg.jpg) no-repeat center fixed !important;*/
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        body::-webkit-scrollbar {
+            width: 1em !important;
+        }
+
+        body::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3) !important;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 137, 255, 0.42) !important;
+            outline: 1px solid slategrey !important;
+        }
+
+        .navbar-wrapper {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 100%;
+            height: 51px;
+            z-index: 999;
+        }
+    </style>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    @{
+        if ((bool?)Session["status"] == true)
+        {
+
+                @Html.Raw(@Session["message"]);
+
+        }
+}
+
+</head>
+<body>
+    <header id="header">
+        <!--header-->
+        <div class="header_top" style="position: fixed; width: 100%; z-index: 99999; box-shadow: rgba(54, 52, 50, 0.36) 0px 1px 15px; background: rgba(0, 137, 255, 0.42) url(../Content/images/header_bg.png) repeat !important;">
+            <!--header_top-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6" style="margin-top:10px;">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="mainmenu pull-left" style="font-style:oblique">
+                            <ul class="nav navbar-nav collapse navbar-collapse">
+                                <li style="font-family: Candara; font-size: large"><a href="/">TRANG CHỦ</a></li>
+                                <li><a href="https://www.facebook.com/GameMasterSLT/">FANPAGE</a></li>
+                                <li><a href="/Nap-the.html">NẠP THẺ</a></li>
+                                <li><a href="/Dich-vu-web.html">KỲ TRÂN CÁC</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="shop-menu pull-right">
+                            <ul class="nav navbar-nav">
+                                @{
+                                    if (Session["login"] != null)
+                                    {
+                                        
+                                        <li class="dropdown">
+                                            <a href="#">Xin chào : @Session["login"]<i class="fa fa-angle-down"></i></a>
+                                            <ul role="menu" class="sub-menu">
+                                                <li><a href="/Dich-vu-web.html">COIN @String.Format("có : {0:#,#} Xu", @Convert.ToInt32(Session["xu"].ToString()))</a></li>
+                                                <li><a href="/Ma-qua-tang.html">Nhập gift code vào game</a></li>
+                                                <li><a href="/Thay-doi-password.html" class="fa fa-wrench">Đổi mật khẩu tài khoản</a></li>
+                                                <li><a href="/Thong-tin-tai-khoan.html">Thông tin tài khoản</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="/Logout" id="form-logout"><i class="fa fa-lock"></i> THOÁT </a></li>
+                                    }
+                                    else
+                                    {
+                                        <li><a href=""><i class="fa fa-user"></i> TÀI KHOẢN</a></li>
+                                        <li><a href="/Dang-ky.html"><i class="fa fa-user"></i> ĐĂNG KÝ</a></li>
+                                        <li><a href="/Dang-nhap.html"><i class="fa fa-lock"></i> ĐĂNG NHẬP</a></li>
+                                    }
+                                }
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/header_top-->
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </header>
+
+    <div style="height:40px;"></div>
+    <div id="container">
+        <div id="left-menu">
+            <div style="background: #112141;">
+                <div class="button-link">
+                    <div class="download">
+                        <div class="lights"></div>
+                        <a class="button-download" href="http://download.9dslt.com/9DHoiUc_SLTeam.rar"></a>
+                    </div>
+                    <div class="dangky">
+                        <a class="button-dangky" href="/Dang-ky.html" title="Đăng ký tài khoản"></a>
+                    </div>
+                    <div class="napthe">
+                        <a class="button-napthe" href="/Nap-the.html" title="Nạp thẻ"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topten" style="margin: 10px 0 0 0;">
+                <div class="title-link">
+                    <i class="fa fa-user" style="margin-right: 10px;"></i><i style=" font-size: 15px; font-family: inherit;">TOP PHÚ HỘ</i>
+                </div>
+                <div class="topdetail">
+                    
+                </div>
+            </div>
+
+            <div class="fbook">
+                <div class="fb-page" data-href="https://www.facebook.com/Vitamintangcanmyphamcaocap/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/GameMasterSLT/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/GameMasterSLT/">Cửu Long Hồi Ức - Mở đầu cho một kết thúc</a></blockquote></div>
+            </div>
+        </div>
+        <div id="main-menu">
+            @RenderBody()
+        </div>
+        <div id="right-menu">
+            <div style="background: #112141; height: 261px;">
+                <div class="event">
+                    
+                    <div class="giangho">
+                        <a class="event-link" href="/Dich-vu-web.html" title="Kỳ trân các"></a>
+                    </div>
+                    <div class="giangho">
+                        <a class="event-link2" href="https://www.facebook.com/Vitamintangcanmyphamcaocap/" title="Hỗ trợ fanpage"></a>
+                    </div>
+                    <div class="giangho">
+                        <a class="event-link3" href="/Ma-qua-tang.html" title="Gift code"></a>
+                    </div>
+                    <div class="giangho">
+                        <a class="event-link4" href="/Nap-the.html" title="Nạp thẻ"></a>
+                    </div>
+                </div>
+                <div class="hotline"></div>
+            </div>
+            <div class="topten" style="margin: 10px 0 0 0;">
+                <div class="title-link2">
+                    <i class="fa fa-user" style="margin-right: 10px;"></i><i style=" font-size: 15px; font-family: inherit;">TOP LEVEL</i>
+                </div>
+                <div class="topdetail">
+                    @Html.Action("Topserver", "Home")
+                </div>
+            </div>
+            <div class="support">
+                <div class="event2">
+                    <div class="giangho2">
+                        <a class="option-link" href="#"></a>
+                    </div>
+                    <div class="giangho2">
+                        <a class="option-link2" href="#"></a>
+                    </div>
+                    <div class="giangho2">
+                        <a class="option-link3" href="#"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bquangcao">
+                @Html.Action("Banner","Service")
+            </div>
+
+        </div>
+        <div style="height:99px;"></div>
+    </div>
+
+
+    <div style="height: 20px;"></div>
+
+    <div style=" width: 100%; margin: 50px auto; color: #ccc; font-size: 12px; float: left;">
+    <p></p>
+        <p></p>
+        <p style="color: black;text-align:center; font-family: Times New Romain; font-size:15px;">©Developer in Vietnamese.</p>
+        <p style="color: black; text-align: center; font-family:Times New Romain; font-size:15px;">© Website thuộc quyền sở hửu độc quyền của 9D Nhật Nguyệt</p>
+        <p style="color: black; text-align: center; font-family: Times New Romain; font-size:15px;">Đã đăng ký bản quyền.</p>
+    </div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+
+    $("#form-logout").click(function (e) {
+        e.preventDefault();
+        var link = '/Account/Logout';
+        $.get(link, function (msg) {
+            window.location = '/';
+        }
+        );
+    });
+</script>
+
+<script>
+    jQuery(document).ready(function ($) {
+
+        try {
+            document.getElementById('link-hots').setAttribute('class', 'isSelected');
+            document.getElementById('tab-hots').style.display = '';
+            document.getElementById('tab-support').style.display = 'none';
+            document.getElementById('tab-event').style.display = 'none';
+
+            $('#link-hots').click(function (e) {
+                document.getElementById('link-hots').setAttribute('class', 'isSelected');
+                document.getElementById('link-support').setAttribute('class', '');
+                document.getElementById('link-event').setAttribute('class', '');
+                document.getElementById('tab-hots').style.display = '';
+                document.getElementById('tab-support').style.display = 'none';
+                document.getElementById('tab-event').style.display = 'none';
+            });
+
+            $('#link-support').click(function (e) {
+                document.getElementById('link-hots').setAttribute('class', '');
+                document.getElementById('link-support').setAttribute('class', 'isSelected');
+                document.getElementById('link-event').setAttribute('class', '');
+                document.getElementById('tab-hots').style.display = 'none';
+                document.getElementById('tab-support').style.display = '';
+                document.getElementById('tab-event').style.display = 'none';
+            });
+
+            $('#link-event').click(function (e) {
+                document.getElementById('link-hots').setAttribute('class', '');
+                document.getElementById('link-support').setAttribute('class', '');
+                document.getElementById('link-event').setAttribute('class', 'isSelected');
+                document.getElementById('tab-hots').style.display = 'none';
+                document.getElementById('tab-support').style.display = 'none';
+                document.getElementById('tab-event').style.display = '';
+            });
+        } catch (e) {
+
+        }
+
+        try {
+            $('#sodienthoai').focus(function (e) {
+                document.getElementById('popup-checksdt').style.display = 'block';
+            });
+            $('#sodienthoai').blur(function (e) {
+                document.getElementById('popup-checksdt').style.display = 'none';
+            });
+        } catch (e) {
+
+        }
+
+
+    });
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>

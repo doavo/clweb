@@ -1,0 +1,70 @@
+﻿@model List<Tempofme.Models._9d_KTCItem>
+@{
+    ViewBag.Title = "Vật phẩm hỗ trợ game";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="dangky-index">
+    <div class="site-map">
+        <div style="margin-top: 0px; font-size: 17px; font-family: initial;">
+            <ul>
+                <li><i class="fa fa-home"></i></li>
+                <li><a href="/" title="Trang chủ">Trang chủ</a></li>
+                <li><i class="fa fa-chevron-circle-right"></i></li>
+                <li><label>Mua vật phẩm hỗ trợ</label></li>
+            </ul>
+        </div>
+    </div>
+    <div class="tab-hots">
+        <div style="height: 100px; padding: 5px 5px 5px 5px; ">
+            @{
+    if (TempData["ktcFailed"] != null)
+    {
+        <div class="alert alert-error" style="margin-top: 55px;">
+            <h4><i class="fa fa-warning">  Lỗi!</i></h4>
+            <i style="font-size: 14px;">@TempData["ktcFailed"]</i>
+        </div>
+    }
+    if (TempData["ktcOK"] != null)
+    {
+        <div class="alert alert-success" style="margin-top: 55px;">
+            <h4><i class="fa fa-warning">  Thành công!</i></h4>
+            <i style="font-size: 14px;">@TempData["ktcOK"]</i>
+        </div>
+    }
+}
+        </div>
+        <div class="form-buy" style="padding-bottom: 35px; ">
+            <!--sign up form-->
+            <div style="height:50px;"></div>
+            <div class="table-shop">
+                <table>
+
+                    <tr>
+                        <th style="width:5%;">Số TT</th>
+                        <th style="width: 60px;">Hình Ảnh</th>
+                        <th>Vật Phẩm</th>
+                        <th style="width: 250px;">Chi Tiết</th>
+                        <th>Giá</th>
+                        <th style="width: 60px;">Mua Hàng</th>
+                    </tr>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>1</td>
+                            <td class=" " style="text-align:center;"><img style="width: 25px; height: 25px; margin: 0 auto;" class="media-object" src="@item.itemimages" alt=""></td>
+                            <td class=" ">@item.itemname </td>
+                            <td class=" ">@item.itemdescription</td>
+                            <td class="a-right a-right ">
+                                @String.Format("{0: ###,###,###,###} Xu", @Convert.ToInt32(@item.itemprice))
+                            <td class=" last">
+                                <a href="/Buy?id=@item.id" style="color:red;" class="fa fa-bell-o"></a>
+                            </td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "Đăng nhập hệ thống";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*
+    <div class="alert alert-warning">
+        <h4><i class="fa fa-warning">  Cảnh báo!</i></h4>
+        <i style="font-size: 14px;">Apparently, Adblock Plus can remove Font Awesome brand icons with their "Remove Social Media Buttons" setting. We will not use hacks to force them to display. Please</i>
+    </div>
+    <div class="alert alert-success">
+        <h4><i class="fa fa-warning">  Thành công!</i></h4>
+        <i style="font-size: 14px;">Apparently, Adblock Plus can remove Font Awesome brand icons with their "Remove Social Media Buttons" setting. We will not use hacks to force them to display. Please</i>
+    </div>*@
+
+<div class="dangky-index">
+    <div class="site-map">
+        <div style="margin-top: 0px; font-size: 17px; font-family: initial;">
+            <ul>
+                <li><i class="fa fa-home"></i></li>
+                <li><a href="/" title="Trang chủ">Trang chủ</a></li>
+                <li><i class="fa fa-chevron-circle-right"></i></li>
+                <li><label>Đăng nhập</label></li>
+            </ul>
+        </div>
+    </div>
+    <div class="tab-hots">
+        <div style="height: 100px; padding: 5px 5px 5px 5px; ">
+            @{
+                if (TempData["errorlogin"] != null)
+                {
+                    <div class="alert alert-error">
+                        <h4><i class="fa fa-warning">  Lỗi!</i></h4>
+                        <i style="font-size: 14px;">@TempData["errorlogin"]</i>
+                    </div>
+                }
+                if (TempData["registerSuccess"] != null)
+                {
+                    <div class="alert alert-success">
+                        <h4><i class="fa fa-warning">  Thành công!</i></h4>
+                        <i style="font-size: 14px;">@TempData["registerSuccess"]</i>
+                    </div>
+                }
+            }
+        </div>
+        <div class="form-signup" style="padding-left: 65px; padding-bottom: 35px; ">
+            <!--sign up form-->
+            @using (Html.BeginForm("Index", "Account", FormMethod.Post))
+            {
+                <table>
+                    <tr>
+                        <td><label class="title-signup">Tên đăng nhập <i style="color:red;"> * </i></label></td>
+                        <td>
+                            @Html.TextBox("name", "", new { @class = "form-input", @placeholder = "Tên tài khoản ..." })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="title-signup">Mật khẩu của bạn <i style="color:red;"> * </i></label></td>
+                        <td>
+                            @Html.Password("password", "", new { @class = "form-input", @placeholder = "Mật khẩu của bạn ..." })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: right;">
+                            <a href="#" class="foget-password">Hay là bạn chưa có tài khoản?</a>
+                            <button type="submit" style="width:100px;" class="btn btn-default">Đăng nhập</button>
+                        </td>
+                    </tr>
+                </table>
+            }
+        </div>
+    </div>
+</div>

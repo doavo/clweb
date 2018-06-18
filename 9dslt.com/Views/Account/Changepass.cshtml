@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Thay đổi mật khẩu của bạn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="dangky-index">
+    <div class="site-map">
+        <div style="margin-top: 0px; font-size: 17px; font-family: initial;">
+            <ul>
+                <li><i class="fa fa-home"></i></li>
+                <li><a href="/" title="Trang chủ">Trang chủ</a></li>
+                <li><i class="fa fa-chevron-circle-right"></i></li>
+                <li><label>Thay đổi mật khẩu</label></li>
+            </ul>
+        </div>
+    </div>
+    <div class="tab-hots">
+
+        <div style="height: 100px; padding: 5px 5px 5px 5px; ">
+            @{
+                if (TempData["erorprofile"] != null)
+                {
+                    <div class="alert alert-error">
+                        <h4><i class="fa fa-warning">  Lỗi!</i></h4>
+                        <i style="font-size: 14px;">@TempData["erorprofile"]</i>
+                    </div>
+                }
+                if (TempData["successprofile"] != null)
+                {
+                    <div class="alert alert-success">
+                        <h4><i class="fa fa-warning">  Thành công!</i></h4>
+                        <i style="font-size: 14px;">@TempData["successprofile"]</i>
+                    </div>
+                }
+            }
+        </div>
+
+        <div class="form-signup" style="padding-left: 65px; padding-bottom: 35px; ">
+            <!--sign up form-->
+            @using (Html.BeginForm("Changepass", "Account", FormMethod.Post))
+            {
+                <table>
+                    <tr>
+                        <td><label class="title-signup">Mật khẩu cũ <i style="color:red;"> * </i></label></td>
+                        <td>
+                            @Html.Password("passwordo", "", new { @class = "form-input", @placeholder = "Mật khẩu cũ ..." })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="title-signup">Mật khẩu mới <i style="color:red;"> * </i></label></td>
+                        <td>
+                            @Html.Password("password", "", new { @class = "form-input", @placeholder = "Mật khẩu mới ..." })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="title-signup">Xác nhận lại<i style="color:red;"> * </i></label></td>
+                        <td>
+                            @Html.Password("passwordx", "", new { @class = "form-input", @placeholder = "Xác nhận mật khẩu mới ..." })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="submit" style="width:100px;" class="btn btn-default">Thay đổi</button>
+                        </td>
+                    </tr>
+                </table>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+﻿@model List<Tempofme.Models._9d_new>
+@{
+    ViewBag.Title = "Newsmanager";
+    Layout = "~/Areas/Administrator/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2> Table design </h2>
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+            <div class="table-responsive">
+                <table class="table table-striped jambo_table bulk_action">
+                    <thead>
+                        <tr class="headings">
+                            <th class="column-title"> ID </th>
+                            <th class="column-title"> Tên bài viết </th>
+                            <th class="column-title"> Ngày tạo </th>
+                            <th class="column-title"> Người tạo </th>
+                            <th class="column-title"> Trạng thái </th>
+                            <th class="column-title"> Action </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr class="even pointer">
+                                <td class=" ">@item.news_id</td>
+                                <td class=" ">@item.news_title </td>
+                                <td class=" ">@item.created_at</td>
+                                <td class="">@item.created_by</td>
+                                <td class="">Đang xem</td>
+                                <td class=" last">
+                                    <a href="DeleteNews?actiondelete=@item.news_id" style="color:red;" class="fa fa-times-circle"></a>
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
